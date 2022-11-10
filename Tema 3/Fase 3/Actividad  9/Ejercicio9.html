@@ -1,0 +1,24 @@
+
+<!--Escriba una función de JavaScript para poner en mayúscula la primera
+letra de cada palabra en una cadena-->
+
+<!DOCTYPE html>
+<html>
+<head><head>
+    <meta charset="utf-8">
+    <title>Ejercicio 9 fase 3</title>
+    <script type="text/javascript">
+      function primeraMayus(str) {
+        var splitStr = str.toLowerCase().split(' ');
+            for (var i = 0; i < splitStr.length; i++) {
+                splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+            }
+        return splitStr.join(' '); 
+        }
+
+document.write(primeraMayus("hola mundo"));
+    </script>
+</head>
+<body>
+</body>
+</html>
